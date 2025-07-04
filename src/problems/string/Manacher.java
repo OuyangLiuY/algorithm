@@ -10,7 +10,5 @@ public class Manacher {
 
     }
 
-    public static String largestPalindrome(String str) {
 
-    }
 }
