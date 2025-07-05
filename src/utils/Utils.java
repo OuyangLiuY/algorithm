@@ -72,11 +72,11 @@ public class Utils {
         StringBuilder val = new StringBuilder();
         System.out.println("single node list : ");
         while (head != null){
-            val.append(head.val).append(" -> ");
+            val.append(head.val).append("->");
             head = head.next;
         }
-        val.append("null");
-        System.out.println(val);
+
+        System.out.println( val.substring(0, val.length()-2));
     }
 
     public static void printListNode(DoubleNodeList head){
