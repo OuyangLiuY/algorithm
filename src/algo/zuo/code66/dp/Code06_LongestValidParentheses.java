@@ -1,4 +1,4 @@
-package code66.algo.dp;
+package algo.zuo.code66.dp;
 
 /**
  * 给你一个只包含 '(' 和 ')' 的字符串找出最长有效（格式正确且连续）括号子串的长度。

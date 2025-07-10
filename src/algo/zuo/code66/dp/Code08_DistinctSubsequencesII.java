@@ -1,4 +1,4 @@
-package code66.algo.dp;
+package algo.zuo.code66.dp;
 
 /**
  * 给定一个字符串 s，计算 s 的 不同非空子序列 的个数

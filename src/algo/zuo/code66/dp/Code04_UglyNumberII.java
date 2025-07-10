@@ -1,4 +1,4 @@
-package code66.algo.dp;
+package algo.zuo.code66.dp;
 
 /**
  * 是的，丑数（Ugly Number） 的正确定义是：只包含质因数 2、3 或 5 的正整数。换句话说，一个丑数可以表示为：

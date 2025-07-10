@@ -1,6 +1,4 @@
-package code66.algo.dp;
-
-import java.util.Arrays;
+package algo.zuo.code66.dp;
 
 /**
  * // 环绕字符串中唯一的子字符串
