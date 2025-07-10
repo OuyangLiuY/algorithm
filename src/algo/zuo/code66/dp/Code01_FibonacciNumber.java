@@ -17,7 +17,7 @@ public class Code01_FibonacciNumber {
         return f1(n);
     }
     // 递归
-    public static int f1(int i) {
+    private static int f1(int i) {
         if (i == 0) {
             return 0;
         }
