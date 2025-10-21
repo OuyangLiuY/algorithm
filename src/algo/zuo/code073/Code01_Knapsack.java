@@ -1,12 +1,10 @@
 package algo.zuo.code073;
 
 import java.io.*;
-
 public class Code01_Knapsack {
 
 
     public static int M = 101;
-    // public static int T = 1001;
     public static int T, N;
     public static int[] COST = new int[M];
     public static int[] VAL = new int[M];
@@ -26,7 +24,7 @@ public class Code01_Knapsack {
                 in.nextToken();
                 VAL[i] = (int) in.nval;
             }
-            out.println(compute1());
+            out.println(compute2());
         }
         out.flush();
         out.close();
@@ -43,6 +41,17 @@ public class Code01_Knapsack {
             }
         }
         return dp[N][T];
+    }
+
+    // 状态压缩
+    private static int compute2() {
+        int[] dp = new int[T + 1];
+        for (int i = 1; i <= N; i++) {
+            for (int j = T; j >= COST[i]; j--) {
+                dp[j] = Math.max(dp[j], (dp[j - COST[i]] + VAL[i]));
+            }
+        }
+        return dp[T];
     }
 
 }
