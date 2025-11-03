@@ -15,18 +15,20 @@ public class Code04_LastStones {
 
     public static void main(String[] args) {
         Code04_LastStones demo = new Code04_LastStones();
-        int[] stones = {2,7,4,1,8,1};
+        int[] stones = {2, 7, 4, 1, 8, 1};
         int ans = demo.lastStoneWeightII(stones);
         System.out.println(ans);
     }
+
     public int lastStoneWeightII(int[] stones) {
         int sum = 0;
         for (int i = 0; i < stones.length; i++) {
             sum += stones[i];
         }
-        int near  = near(stones, sum / 2);
-        return sum- near - near;
+        int near = near(stones, sum / 2);
+        return sum - near - near;
     }
+
     // 非负数组stones，子序列累加和不超过t，返回最接近t的累加和
     // 01背包问题（子集累加和尽量接近t）
     private int near(int[] stones, int t) {
@@ -43,6 +45,6 @@ public class Code04_LastStones {
         }
         return dp[t];
     }
-    // dp[i][j] 前i个数，累加和 <= j, 并保证这个累加和尽量大
+
 
 }
